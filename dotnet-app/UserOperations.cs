@@ -19,6 +19,7 @@ namespace dotnet_app
     {
         public static async Task CreateUserAsync(Container container, User user)
         {
+            //Test change to trigget action
             try
             {
                 ItemResponse<User> response = await container.CreateItemAsync(user, new PartitionKey(user.id));
